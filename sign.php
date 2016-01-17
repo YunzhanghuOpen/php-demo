@@ -55,6 +55,7 @@ class HMAC
         $signPars = "";
         ksort($input);
         foreach ($input as $k => $v) {
+            $v = strval($v);
             if ("sign" != $k && "" != $v) {
                 $signPars .= $k . "=" . $v . "&";
             }
