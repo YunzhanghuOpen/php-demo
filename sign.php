@@ -2,9 +2,9 @@
 
 date_default_timezone_set('Asia/Chongqing');
 
-$partner = '';                       // 商户编号（测试环境）
-$key = '';                           // 签名秘钥（测试环境）
-$baseUrl = '';                       // 接口地址（测试环境）
+$partner = '196610';                       // 商户编号（测试环境）
+$key = 'ccf1cb8383cb4f691a4a8b0ff69840bd';                           // 签名秘钥（测试环境）
+$baseUrl = 'https://trial.yunzhanghu.com';                       // 接口地址（测试环境）
 
 
 $runtime = time();
@@ -15,6 +15,7 @@ $input = [
     'partner' => $partner,
     'user_id' => 1017,
     'timestamp' => $runtime,
+    'channel' => "test_code@{$partner}", //测试用渠道
 ];
 
 // 签名示范
