@@ -8,4 +8,8 @@
 
 * sign.php 《云账户商户接入指南》适配的签名示范
 
+### Run test
+
+`php sign.php`
+
 
