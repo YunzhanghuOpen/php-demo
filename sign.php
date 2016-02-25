@@ -54,9 +54,9 @@ class HMAC
     {
 
         $signPars = "";
-        ksort($input);
-        foreach ($input as $k => $v) {
-            $v = strval($v);
+        ksort($input);                            // 注意：需要先排序
+        foreach ($input as $k => $v) {            // 使用循环，不限制参与签名的参数个数
+            $v = strval($v);                      // 全部转换为字符串，避免类型问题
             if ("sign" != $k && "" != $v) {
                 $signPars .= $k . "=" . $v . "&";
             }
