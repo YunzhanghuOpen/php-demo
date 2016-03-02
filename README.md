@@ -1,6 +1,6 @@
 # php-demo
 
-![yun](https://www.yunzhanghu.com/img/logo.png)
+![yun](http://www.yunzhanghu.com/img/logo.png)
 
 云账户 php demo 列表
 
