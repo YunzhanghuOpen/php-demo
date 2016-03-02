@@ -10,6 +10,7 @@
 
 ### Run test
 
-`php sign.php`
+SHA256 版本：`php sign.php`
+HMAC 版本：`php sign_hmac.php`
 
 
